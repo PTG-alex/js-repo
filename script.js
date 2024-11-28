@@ -1,9 +1,9 @@
 
     const campaignData = [
-        { image: 'https://www.ptglab.com/media/lvrnuu5d/if-3.jpg', text: 'Day 1: Special Offer on Gifts!' },
-        { image: 'https://www.ptglab.com/media/ff0pxo3y/if-1.jpg', text: 'Day 2: Save on all Orders!' },
+        { image: 'https://www.ptglab.com/media/zwvp2x3y/dec-14.png', text: 'Day 1: Special Offer on Gifts!' },
+        { image: 'https://www.ptglab.com/media/vtwd1roq/dec-15.png', text: 'Day 2: Save on all Orders!' },
         { image: 'https://www.ptglab.com/media/hgbhu3i5/wb-2.jpg', text: 'Day 3: Free Shipping Today!' },
-        { image: 'day4.jpg', text: 'Day 4: Exclusive Christmas Deals!' },
+        { image: 'https://www.ptglab.com/media/l0ydg4te/dec-16.png', text: 'Day 4: Exclusive Christmas Deals!' },
         { image: 'day5.jpg', text: 'Day 5: Buy 1 Get 1 Free!' },
         { image: 'day6.jpg', text: 'Day 6: Discounts on Bestsellers!' },
         { image: 'day7.jpg', text: 'Day 7: Gifts for Everyone!' },
