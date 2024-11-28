@@ -4,7 +4,7 @@
         { image: 'https://www.ptglab.com/media/vtwd1roq/dec-15.png', text: 'Day 2: Save on all Orders!' },
         { image: 'https://www.ptglab.com/media/l0ydg4te/dec-16.png', text: 'Day 3: Free Shipping Today!' },
         { image: 'https://www.ptglab.com/media/3mynkb3h/dec-17.png', text: 'Day 4: Exclusive Christmas Deals!' },
-        { image: 'day5.jpg', text: 'Day 5: Buy 1 Get 1 Free!' },
+        { image: 'https://www.ptglab.com/media/yzlpk3ln/dec-18.png', text: 'Day 5: Buy 1 Get 1 Free!' },
         { image: 'day6.jpg', text: 'Day 6: Discounts on Bestsellers!' },
         { image: 'day7.jpg', text: 'Day 7: Gifts for Everyone!' },
         { image: 'day8.jpg', text: 'Day 8: Shop More, Save More!' },
