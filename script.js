@@ -1,4 +1,4 @@
-<script>
+
     const campaignData = [
         { image: 'https://www.ptglab.com/media/lvrnuu5d/if-3.jpg', text: 'Day 1: Special Offer on Gifts!' },
         { image: 'https://www.ptglab.com/media/ff0pxo3y/if-1.jpg', text: 'Day 2: Save on all Orders!' },
@@ -40,4 +40,4 @@
             <p>The 12 Days of Christmas campaign starts soon! Check back later!</p>
         `;
     }
-</script>
+
