@@ -80,7 +80,7 @@ if (centralNow < startDate) {
     // Before the campaign
     campaignImage1.src = 'https://www.ptglab.com/media/s5vpabqu/12-days-of-christmas-placeholder.jpg'; 
     campaignImage1.alt = 'Proteintech 12 Days of Christmas placeholder image';
-    campaignText.textContent = 'Get ready! The 12 Days of Christmas campaign is coming soon!';
+    campaignText.textContent = 'Get ready! The 12 Days of Christmas giveaway is coming soon!';
 } else if (centralNow >= startDate && centralNow < endDate) {
     // During the campaign
     const dayDiff = Math.floor((centralNow - startDate) / (1000 * 60 * 60 * 24));
