@@ -61,47 +61,49 @@ const campaignData = [
     }
 ];
 
-// Get current Central Time
-const now = new Date();
-const centralOffset = new Date().getTimezoneOffset() + 360; // Central Time is UTC-6
-const centralNow = new Date(now.getTime() - centralOffset * 60000);
+document.addEventListener('DOMContentLoaded', function () {
+    // Get current Central Time
+    const now = new Date();
+    const centralOffset = new Date().getTimezoneOffset() + 360; // Central Time is UTC-6
+    const centralNow = new Date(now.getTime() - centralOffset * 60000);
 
-// Set the campaign start and end dates
-const startDate = new Date(2024, 11, 14); // Start date (year, month - 1, day)
-const endDate = new Date(startDate.getTime() + 12 * 24 * 60 * 60 * 1000); // End date (12 days later)
+    // Set the campaign start and end dates
+    const startDate = new Date(2024, 11, 14); // Start date (year, month - 1, day)
+    const endDate = new Date(startDate.getTime() + 12 * 24 * 60 * 60 * 1000); // End date (12 days later)
 
-// Select DOM elements
-const image1Container = document.getElementById('campaign-container-image1');
-const image2Container = document.getElementById('campaign-container-image2');
-const campaignText = document.getElementById('campaign-text');
+    // Select DOM elements
+    const image1Container = document.getElementById('campaign-container-image1');
+    const image2Container = document.getElementById('campaign-container-image2');
+    const campaignText = document.getElementById('campaign-text');
 
-// Determine if we are before, during, or after the campaign
-if (centralNow < startDate) {
-    // Before the campaign
-    image1Container.innerHTML = `
-        <img src="https://www.ptglab.com/media/s5vpabqu/12-days-of-christmas-placeholder.jpg" alt="Coming Soon">
-    `;
-    image2Container.innerHTML = `
-        <img src="https://www.ptglab.com/media/5pujuon1/recombinant-antibodies.png" alt="Coming Soon">
-    `;
-    campaignText.textContent = 'Get ready! The 12 Days of Christmas campaign is coming soon!';
-} else if (centralNow >= startDate && centralNow < endDate) {
-    // During the campaign
-    const dayDiff = Math.floor((centralNow - startDate) / (1000 * 60 * 60 * 24));
-    image1Container.innerHTML = `
-        <img src="${campaignData[dayDiff].image1}" alt="Image 1 for ${campaignData[dayDiff].text}">
-    `;
-    image2Container.innerHTML = `
-        <img src="${campaignData[dayDiff].image2}" alt="Image 2 for ${campaignData[dayDiff].text}">
-    `;
-    campaignText.textContent = campaignData[dayDiff].text;
-} else {
-    // After the campaign
-    image1Container.innerHTML = `
-        <img src="https://www.ptglab.com/img/chromotek_homepage.webp" alt="Thank You">
-    `;
-    image2Container.innerHTML = `
-        <img src="https://www.ptglab.com/media/et1jo0lw/flexable-2-0-web-banner.png" alt="Thank You">
-    `;
-    campaignText.textContent = 'Thank you for participating in our 12 Days of Christmas campaign!';
-}
+    // Determine if we are before, during, or after the campaign
+    if (centralNow < startDate) {
+        // Before the campaign
+        image1Container.innerHTML = `
+            <img src="https://www.ptglab.com/media/s5vpabqu/12-days-of-christmas-placeholder.jpg" alt="Coming Soon">
+        `;
+        image2Container.innerHTML = `
+            <img src="https://www.ptglab.com/media/5pujuon1/recombinant-antibodies.png" alt="Coming Soon">
+        `;
+        campaignText.innerHTML = 'Get ready! The 12 Days of Christmas campaign is coming soon!';
+    } else if (centralNow >= startDate && centralNow < endDate) {
+        // During the campaign
+        const dayDiff = Math.floor((centralNow - startDate) / (1000 * 60 * 60 * 24));
+        image1Container.innerHTML = `
+            <img src="${campaignData[dayDiff].image1}" alt="Image 1 for ${campaignData[dayDiff].text}">
+        `;
+        image2Container.innerHTML = `
+            <img src="${campaignData[dayDiff].image2}" alt="Image 2 for ${campaignData[dayDiff].text}">
+        `;
+        campaignText.innerHTML = campaignData[dayDiff].text;
+    } else {
+        // After the campaign
+        image1Container.innerHTML = `
+            <img src="https://www.ptglab.com/img/chromotek_homepage.webp" alt="Thank You">
+        `;
+        image2Container.innerHTML = `
+            <img src="https://www.ptglab.com/media/et1jo0lw/flexable-2-0-web-banner.png" alt="Thank You">
+        `;
+        campaignText.innerHTML = 'Thank you for participating in our 12 Days of Christmas campaign!';
+    }
+});
