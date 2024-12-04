@@ -78,8 +78,8 @@ const campaignText = document.getElementById('campaign-text');
 // Determine if we are before, during, or after the campaign
 if (centralNow < startDate) {
     // Before the campaign
-    campaignImage1.src = 'https://via.placeholder.com/600x400?text=Coming+Soon'; 
-    campaignImage1.alt = 'Placeholder image for coming soon';
+    campaignImage1.src = 'https://www.ptglab.com/media/s5vpabqu/12-days-of-christmas-placeholder.jpg'; 
+    campaignImage1.alt = 'Proteintech 12 Days of Christmas placeholder image';
     campaignText.textContent = 'Get ready! The 12 Days of Christmas campaign is coming soon!';
 } else if (centralNow >= startDate && centralNow < endDate) {
     // During the campaign
