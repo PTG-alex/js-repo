@@ -13,28 +13,34 @@ const campaignData = [
     { image: 'day12.jpg', text: 'Day 12: Final Christmas Offer!' }
 ];
 
- // Get current Pacific Time
- const now = new Date();
-    const pacificOffset = new Date().getTimezoneOffset() + 480; // Pacific Time is UTC-8
-    const pacificNow = new Date(now.getTime() - pacificOffset * 60000);
+// Get current Pacific Time
+const now = new Date();
+const pacificOffset = new Date().getTimezoneOffset() + 480; // Pacific Time is UTC-8
+const pacificNow = new Date(now.getTime() - pacificOffset * 60000);
 
-    // Start date for the 12 Days of Christmas campaign (Pacific Time)
-    const startDate = new Date(pacificNow.getFullYear(), 11, 4); // December 14th (Month is 0-based)
+// Set the campaign start and end dates
+const startDate = new Date(2024, 11, 4); // Start date (year, month - 1, day)
+const endDate = new Date(startDate.getTime() + 12 * 24 * 60 * 60 * 1000); // End date (12 days later)
 
-    // Calculate the number of days since the start of the campaign
+// Select DOM elements
+const campaignImage = document.getElementById('campaign-image');
+const campaignText = document.getElementById('campaign-text');
+
+// Determine if we are before, during, or after the campaign
+if (pacificNow < startDate) {
+    // Before the campaign
+    campaignImage.src = 'https://via.placeholder.com/600x400?text=Coming+Soon'; // Replace with your "Coming Soon" image URL
+    campaignImage.alt = 'Placeholder image for coming soon';
+    campaignText.textContent = 'Get ready! The 12 Days of Christmas campaign is coming soon!';
+} else if (pacificNow >= startDate && pacificNow < endDate) {
+    // During the campaign
     const dayDiff = Math.floor((pacificNow - startDate) / (1000 * 60 * 60 * 24));
-
-    // Check if we are within the 12-day range
-    if (dayDiff >= 0 && dayDiff < 12) {
-        const campaignImage = document.getElementById('campaign-image');
-        const campaignText = document.getElementById('campaign-text');
-
-        // Update the content based on the current day
-        campaignImage.src = campaignData[dayDiff].image;
-        campaignText.textContent = campaignData[dayDiff].text;
-    } else {
-        // Default message when outside the campaign dates
-        document.getElementById('campaign-container').innerHTML = `
-            <p>The 12 Days of Christmas campaign starts on December 14th!</p>
-        `;
-    }
+    campaignImage.src = campaignData[dayDiff].image;
+    campaignImage.alt = `Image for ${campaignData[dayDiff].text}`;
+    campaignText.textContent = campaignData[dayDiff].text;
+} else {
+    // After the campaign
+    campaignImage.src = 'https://via.placeholder.com/600x400?text=Thank+You'; // Replace with your "Thank You" or "Campaign Ended" image URL
+    campaignImage.alt = 'Placeholder image for campaign ended';
+    campaignText.textContent = 'Thank you for participating in our 12 Days of Christmas campaign!';
+}
