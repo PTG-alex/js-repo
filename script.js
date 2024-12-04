@@ -1,5 +1,4 @@
-<script>
-    const campaignData = [
+const campaignData = [
     { image: 'https://www.ptglab.com/media/zwvp2x3y/dec-14.png', text: 'Day 1: Special Offer on Gifts!' },
     { image: 'https://www.ptglab.com/media/vtwd1roq/dec-15.png', text: 'Day 2: Save on all Orders!' },
     { image: 'https://www.ptglab.com/media/l0ydg4te/dec-16.png', text: 'Day 3: Free Shipping Today!' },
