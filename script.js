@@ -84,7 +84,7 @@ if (centralNow < startDate) {
     image2Container.innerHTML = `
         <img src="https://www.ptglab.com/media/5pujuon1/recombinant-antibodies.png" alt="Coming Soon">
     `;
-    textContainer.innerHTML = `<p>Get ready! The 12 Days of Christmas giveaway is coming soon!</p>`;
+    textContainer.innerHTML = `Get ready! The 12 Days of Christmas giveaway is coming soon!`;
 } else if (centralNow >= startDate && centralNow < endDate) {
     // During the campaign
     const dayDiff = Math.floor((centralNow - startDate) / (1000 * 60 * 60 * 24));
