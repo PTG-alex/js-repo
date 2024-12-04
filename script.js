@@ -84,7 +84,7 @@ if (centralNow < startDate) {
     image2Container.innerHTML = `
         <img src="https://www.ptglab.com/media/5pujuon1/recombinant-antibodies.png" alt="Coming Soon">
     `;
-    campaignText.innerHTML = 'Get ready! The 12 Days of Christmas campaign is coming soon!';
+    campaignText.textContent = 'Get ready! The 12 Days of Christmas campaign is coming soon!';
 } else if (centralNow >= startDate && centralNow < endDate) {
     // During the campaign
     const dayDiff = Math.floor((centralNow - startDate) / (1000 * 60 * 60 * 24));
@@ -94,7 +94,7 @@ if (centralNow < startDate) {
     image2Container.innerHTML = `
         <img src="${campaignData[dayDiff].image2}" alt="Image 2 for ${campaignData[dayDiff].text}">
     `;
-    campaignText.innerHTML = campaignData[dayDiff].text;
+    campaignText.textContent = campaignData[dayDiff].text;
 } else {
     // After the campaign
     image1Container.innerHTML = `
@@ -103,5 +103,5 @@ if (centralNow < startDate) {
     image2Container.innerHTML = `
         <img src="https://www.ptglab.com/media/et1jo0lw/flexable-2-0-web-banner.png" alt="Thank You">
     `;
-    campaignText.innerHTML = 'Thank you for participating in our 12 Days of Christmas campaign!';
+    campaignText.textContent = 'Thank you for participating in our 12 Days of Christmas campaign!';
 }
