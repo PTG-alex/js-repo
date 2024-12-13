@@ -61,10 +61,10 @@
     }
 ];
 
-// Get current Central Time
+// Get current Pacific Time
 const now = new Date();
-const centralOffset = new Date().getTimezoneOffset() + 360; // Central Time is UTC-6
-const centralNow = new Date(now.getTime() - centralOffset * 60000);
+const pacificOffset = new Date().getTimezoneOffset() + 480; // Pacific Time is UTC-8
+const pacificNow = new Date(now.getTime() - pacificOffset * 60000);
 
 // Set the campaign start and end dates
 const startDate = new Date(2024, 11, 14); // Start date (year, month - 1, day)
@@ -76,14 +76,14 @@ const campaignImage2 = document.getElementById('campaign-image2');
 const campaignText = document.getElementById('campaign-text');
 
 // Determine if we are before, during, or after the campaign
-if (centralNow < startDate) {
+if (pacificNow < startDate) {
     // Before the campaign
     campaignImage1.src = 'https://www.ptglab.com/media/s5vpabqu/12-days-of-christmas-placeholder.jpg'; 
     campaignImage1.alt = 'Proteintech 12 Days of Christmas placeholder image';
     campaignText.textContent = 'Get ready! The 12 Days of Christmas giveaway is coming soon!';
-} else if (centralNow >= startDate && centralNow < endDate) {
+} else if (pacificNow >= startDate && pacificNow < endDate) {
     // During the campaign
-    const dayDiff = Math.floor((centralNow - startDate) / (1000 * 60 * 60 * 24));
+    const dayDiff = Math.floor((pacificNow - startDate) / (1000 * 60 * 60 * 24));
     campaignImage1.src = campaignData[dayDiff].image1;
     campaignImage2.src = campaignData[dayDiff].image2;
     campaignImage1.alt = `Image for ${campaignData[dayDiff].text}`;
