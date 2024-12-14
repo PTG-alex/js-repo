@@ -61,10 +61,18 @@
     }
 ];
 
-// Get current Pacific Time
-const now = new Date();
-const pacificOffset = new Date().getTimezoneOffset() + 480; // Pacific Time is UTC-8
-const pacificNow = new Date(now.getTime() - pacificOffset * 60000);
+// Get Pacific Time using Intl.DateTimeFormat
+const pacificNow = new Date(
+    new Intl.DateTimeFormat("en-US", {
+        timeZone: "America/Los_Angeles",
+        year: "numeric",
+        month: "numeric",
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric"
+    }).format()
+);
 
 // Set the campaign start and end dates
 const startDate = new Date(2024, 11, 14); // Start date (year, month - 1, day)
@@ -97,3 +105,4 @@ if (pacificNow < startDate) {
     campaignImage2.alt = 'Placeholder image for campaign ended';
     campaignText.textContent = 'Our giveaway has ended.';
 }
+
