@@ -75,7 +75,7 @@ const pacificNow = new Date(
 );
 
 // Set the campaign start and end dates
-const startDate = new Date(2025, 11, 7); // Start date (year, month - 1, day)
+const startDate = new Date(2025, 11, 14); // Start date (year, month - 1, day)
 const endDate = new Date(startDate.getTime() + 12 * 24 * 60 * 60 * 1000); // End date (12 days later)
 
 // Select DOM elements
