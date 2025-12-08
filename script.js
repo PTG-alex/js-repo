@@ -1,63 +1,63 @@
     const campaignData = [
         { 
-        image1: 'https://www.ptglab.com/media/v5obsomg/12-days-of-christmas-2024-header-01.jpg',
-        image2: 'https://www.ptglab.com/media/r4rhlbfl/2024-12days-webcalendar-01.jpg',
-        text: 'On the first day of Christmas, you could win a GoPro Hero to capture every epic adventure. Ready, set, action!'
+        image1: 'https://www.ptglab.com/media/w5pnfqfm/12-days-2025-web-banner-day-1-resize.png',
+        image2: 'https://www.ptglab.com/media/5ahhqi0l/12-days-2025-advent-day-1.png',
+        text: 'On the first day of Christmas, you get your very own Mini Labcoat Pin with Alice the Alpaca on it! Don’t wait, this offer is only available today, December 14th, while supplies last'
     },
     { 
-        image1: 'https://www.ptglab.com/media/simoons3/12-days-of-christmas-2024-header-02.jpg',
-        image2: 'https://www.ptglab.com/media/02mfl2ud/2024-12days-webcalendar-02.jpg', 
-        text: 'On the second day of Christmas, you could win a box of cookies to sweeten up your lab crew! Science is better with snacks, right?'
+        image1: 'https://www.ptglab.com/media/gc5emp0d/12-days-2025-web-banner-day-2-resize.png',
+        image2: 'https://www.ptglab.com/media/aarnvgqj/12-days-2025-advent-day-2.png', 
+        text: 'On the second day of Christmas, a cozy prize is in sight. Win a portable projector to make every movie night just right. Available today only, December 15th, 2025.'
     },
     { 
-        image1: 'https://www.ptglab.com/media/ghcdekmj/12-days-of-christmas-2024-header-03.jpg',
-        image2: 'https://www.ptglab.com/media/13bbnftc/2024-12days-webcalendar-03.jpg',
-        text: 'On the third day of Christmas, you could win an ugly sweater sticker! Add some flair and festive cheer to your ugly sweater gear.'
+        image1: 'https://www.ptglab.com/media/mcshyyan/12-days-2025-web-banner-day-3-resize.png',
+        image2: 'https://www.ptglab.com/media/sxvjdc1f/12-days-2025-advent-day-3.png',
+        text: 'On the third day of Christmas, we’re making spirits brighter. Enter now to win our Able AI sweater sticker. This offer is open today, December 16th, for a limited time and while supplies last.'
     },
     { 
-        image1: 'https://www.ptglab.com/media/bprl5x23/12-days-of-christmas-2024-header-04.jpg',
-        image2: 'https://www.ptglab.com/media/ff0pskcw/2024-12days-webcalendar-04.jpg',
-        text: 'On the fourth day of Christmas, you could win a portable projector for epic movie nights or next-level presentations.' 
+        image1: 'https://www.ptglab.com/media/bchpdpt4/12-days-2025-web-banner-day-4-resize.png',
+        image2: 'https://www.ptglab.com/media/uiznerms/12-days-2025-advent-day-4.png',
+        text: 'On the fourth day of Christmas, we’re fueling your holiday cheer. Make every morning brew-tiful with a new Nespresso Machine. This offer is available today, December 17th, only.' 
     },
     { 
-        image1: 'https://www.ptglab.com/media/wbfb3xh3/12-days-of-christmas-2024-header-05.jpg',
-        image2: 'https://www.ptglab.com/media/jhhfinnl/2024-12days-webcalendar-05.jpg',
-         text: 'On the fifth day of Christmas, you could win a custom lab coat mug! Personalized with your name, it’s the perfect blend of science and style for every sip.'
+        image1: 'https://www.ptglab.com/media/220ba2rz/12-days-2025-web-banner-day-5-resize.png',
+        image2: 'https://www.ptglab.com/media/otjdcgxa/12-days-2025-advent-day-5.png',
+        text: 'On the fifth day of Christmas, we’ve brewed up a special gift for you. Enter to win a custom Lab Coat Mug. Available today, December 18th, only.'
     },
     { 
-        image1: 'https://www.ptglab.com/media/xjqdq1ws/12-days-of-christmas-2024-header-06.jpg',
-        image2: 'https://www.ptglab.com/media/040lv5bg/2024-12days-webcalendar-06.jpg',
-        text: 'On the sixth day of Christmas, you could stand a chance to brighten your day with a colorful Alice the Alpaca temporary tattoo or laptop sticker.'
+        image1: 'https://www.ptglab.com/media/fgppswjj/12-days-2025-web-banner-day-6-resize.png',
+        image2: 'https://www.ptglab.com/media/5kpdhwaj/12-days-2025-advent-day-6.png',
+        text: 'On the sixth day of Christmas, we’re zooming into the festivities. Enter to win a Mini Microscope. Available today, December 19th, while supplies last.'
     },
     { 
-        image1: 'https://www.ptglab.com/media/mvhblukx/12-days-of-christmas-2024-header-07.jpg',
-        image2: 'https://www.ptglab.com/media/mw0pxyo0/2024-12days-webcalendar-07.jpg',
-        text: 'On the seventh of Christmas, you could win a pizza party for the whole lab — Because science and pizza are the perfect pairing.'
+        image1: 'https://www.ptglab.com/media/uj3dgtpu/12-days-2025-web-banner-day-7-resize.png',
+        image2: 'https://www.ptglab.com/media/quzco4sb/12-days-2025-advent-day-7.png',
+        text: 'On the seventh day of Christmas, we’re turning up the cheer. Enter to win OpenFit Bone-Conducting Headphones. This offer is only available on December 20th, 2025.'
     },
     { 
-        image1: 'https://www.ptglab.com/media/oykbthst/12-days-of-christmas-2024-header-08.jpg',
-        image2: 'https://www.ptglab.com/media/yrnonz3z/2024-12days-webcalendar-08.jpg',
-        text: 'On the eighth day of Christmas, you could win a Bose Quiet Comfort headphones! Tune in to your favorite beats or just enjoy the peace.'
+        image1: 'https://www.ptglab.com/media/pmmpuzue/12-days-2025-web-banner-day-8-resize.png',
+        image2: 'https://www.ptglab.com/media/phypxl1v/12-days-2025-advent-day-8.png',
+        text: 'On the eighth day of Christmas, enter to win a custom IF Blanket, the perfect way to stay warm this holiday season. Don’t wait, this offer is only available on December 21st, 2025.'
     },
     { 
-        image1: 'https://www.ptglab.com/media/mnuaxxm4/12-days-of-christmas-2024-header-09.jpg',
-        image2: 'https://www.ptglab.com/media/dhifotq5/2024-12days-webcalendar-09.jpg',
-        text: 'On the ninth day of Christmas, you could win a Proteintech drink koozie. Keep your drinks chilled…with a festive koozie featuring your favorite antibody provider!'
+        image1: 'https://www.ptglab.com/media/12lejuv5/12-days-2025-web-banner-day-9-resize.png',
+        image2: 'https://www.ptglab.com/media/p2shlq3i/12-days-2025-advent-day-9.png',
+        text: 'On the ninth day of Christmas, we’re treating your lab to lunch! Enter to win a team lunch and bring some festive cheer to the whole lab. This is only available December 22nd, 2025.'
     },
     { 
-        image1: 'https://www.ptglab.com/media/mmufbuv1/12-days-of-christmas-2024-header-10.jpg',
-        image2: 'https://www.ptglab.com/media/eokjeoed/2024-12days-webcalendar-10.jpg',
-        text: 'On the tenth day of Christmas, you could win an Oura Ring to track your sleep, steps, and science-worthy stats.  '
+        image1: 'https://www.ptglab.com/media/2o4ntvik/12-days-2025-web-banner-day-10-resize.png',
+        image2: 'https://www.ptglab.com/media/yxefuy4u/12-days-2025-advent-day-10.png',
+        text: 'On the tenth day of Christmas, we’ve got a gift that keeps you on time and on track, an Apple Watch!'
     },
     { 
-        image1: 'https://www.ptglab.com/media/4ltb0qz4/12-days-of-christmas-2024-header-11.jpg',
-        image2: 'https://www.ptglab.com/media/bzxdgub2/2024-12days-webcalendar-11.jpg',
-        text: 'On the eleventh day of Christmas, serve up some holiday cheers with these hand painted 12 days-themed plates perfect for cookies, snacks, or your favorite festive feast.'
+        image1: 'https://www.ptglab.com/media/mqfmu5ho/12-days-2025-web-banner-day-11-resize.png',
+        image2: 'https://www.ptglab.com/media/kx5gnx01/12-days-2025-advent-day-11.png',
+        text: 'On the eleventh day of Christmas, take your holiday spirits to new heights with a drone! This giveaway is only available on December 24th, 2025.'
     },
     { 
-        image1: 'https://www.ptglab.com/media/ovzda3qy/12-days-of-christmas-2024-header-12.jpg',
-        image2: 'https://www.ptglab.com/media/zycjhwc2/2024-12days-webcalendar-12.jpg',
-        text: 'On the twelfth day of Christmas, you could win a Ray-Ban Meta Glasses to keep you connected and stylish all year long.'
+        image1: 'https://www.ptglab.com/media/13vhudgl/12-days-2025-web-banner-day-12-resize.png',
+        image2: 'https://www.ptglab.com/media/geqntsow/12-days-2025-advent-day-12.png',
+        text: 'On the twelfth day of Christmas, we’re ending the season with a classic… a Home Alone Lego set!'
     }
 ];
 
@@ -75,7 +75,7 @@ const pacificNow = new Date(
 );
 
 // Set the campaign start and end dates
-const startDate = new Date(2024, 11, 14); // Start date (year, month - 1, day)
+const startDate = new Date(2025, 11, 14); // Start date (year, month - 1, day)
 const endDate = new Date(startDate.getTime() + 12 * 24 * 60 * 60 * 1000); // End date (12 days later)
 
 // Select DOM elements
@@ -86,8 +86,9 @@ const campaignText = document.getElementById('campaign-text');
 // Determine if we are before, during, or after the campaign
 if (pacificNow < startDate) {
     // Before the campaign
-    campaignImage1.src = 'https://www.ptglab.com/media/s5vpabqu/12-days-of-christmas-placeholder.jpg'; 
+    campaignImage1.src = 'https://www.ptglab.com/media/ziobvron/12-days-2025-web-banner-blank-2-resize.png'; 
     campaignImage1.alt = 'Proteintech 12 Days of Christmas placeholder image';
+    campaignImage2.src = 'https://www.ptglab.com/media/xombjpmy/12-days-2025-advent-day-0.png'; 
     campaignText.textContent = 'Get ready! The 12 Days of Christmas giveaway is coming soon!';
 } else if (pacificNow >= startDate && pacificNow < endDate) {
     // During the campaign
@@ -99,8 +100,8 @@ if (pacificNow < startDate) {
     campaignText.textContent = campaignData[dayDiff].text;
 } else {
     // After the campaign
-    campaignImage1.src = 'https://www.ptglab.com/media/rspjmjgs/12-days-of-christmas-2024-end.jpg'; 
-    campaignImage2.src = 'https://www.ptglab.com/media/fvvcb0vb/2024-12days-webcalendar-end.jpg'; 
+    campaignImage1.src = 'https://www.ptglab.com/media/vegjjmmq/12-days-2025-web-banner-thank-you-resize.png'; 
+    campaignImage2.src = 'https://www.ptglab.com/media/geqntsow/12-days-2025-advent-day-12.png'; 
     campaignImage1.alt = 'Placeholder image for campaign ended';
     campaignImage2.alt = 'Placeholder image for campaign ended';
     campaignText.textContent = 'Our giveaway has ended.';
